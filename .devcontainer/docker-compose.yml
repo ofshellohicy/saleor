@@ -3,6 +3,8 @@ version: "3.4"
 services:
   saleor:
     image: saleor
+    ports:
+      - 8000:8000
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
